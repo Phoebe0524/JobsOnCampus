@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     width: "80%",
     height: 50,
     position: "absolute",
-    top: 800,
+    top: 660,
     right: 40,
   },
   text: {

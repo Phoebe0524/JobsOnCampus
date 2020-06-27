@@ -1,19 +1,15 @@
 import React from "react";
-import "react-native-gesture-handler";
 import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 import Button from "../components/Button";
 
 function HomeScreen(props) {
   return (
-    <ImageBackground
-      blurRadius={5}
-      source={require("../assets/campusPart.png")}
-      style={styles.container}
-    >
-      <Image style={styles.logo} source={require("../assets/logo2.png")} />
-      <Text style={styles.text}> Find Jobs on Campus!</Text>
+    <View style={styles.container}>
+      <Image style={styles.logo} source={require("../assets/BrandyLogo.jpg")} />
+      <Text style={styles.text}> For Jobs on Campus!</Text>
+      <Image style={styles.image} source={require("../assets/Hiring.jpg")} />
       <Button title="Login" />
-    </ImageBackground>
+    </View>
   );
 }
 
@@ -24,17 +20,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   logo: {
-    width: "90%",
-    height: "15%",
+    width: "80%",
+    height: "9%",
     position: "absolute",
     top: 190,
+  },
+  image: {
+    width: "80%",
+    height: "20%",
   },
   text: {
     fontSize: 25,
     fontWeight: "bold",
     color: "#000080",
     position: "absolute",
-    top: 320,
+    top: 290,
   },
 });
 
