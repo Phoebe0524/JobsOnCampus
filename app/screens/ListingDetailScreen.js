@@ -8,9 +8,6 @@ import PublisherDetail from "../components/PublisherDetail";
 function ListingDetailScreen(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.icon}>
-        <Ionicons name="ios-arrow-back" size={30} color="black" />
-      </View>
       <Image style={styles.image} source={require("../assets/Hiring.jpg")} />
       <View style={styles.detailContainer}>
         <Text style={styles.jobTitle}>2020 fall Econ83 TA</Text>
@@ -21,8 +18,8 @@ function ListingDetailScreen(props) {
         <Text style={styles.requirement}>Salary: $14/hour</Text>
       </View>
       <PublisherDetail
-        name="Tymon"
-        listing="1 listing"
+        line1="Professor Tymon"
+        line2="1 listing"
         image={require("../assets/user1.png")}
       />
     </View>

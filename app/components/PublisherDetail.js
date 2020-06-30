@@ -1,13 +1,13 @@
 import React from "react";
 import { View, StyleSheet, Image, Text } from "react-native";
 
-function PublisherDetail({ image, name, listing }) {
+function PublisherDetail({ image, line1, line2 }) {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={image} />
+      {image && <Image style={styles.image} source={image} />}
       <View style={styles.detailContainer}>
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.listing}>{listing}</Text>
+        <Text style={styles.line1}>{line1}</Text>
+        <Text style={styles.line2}>{line2}</Text>
       </View>
     </View>
   );
@@ -25,15 +25,15 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   detailContainer: {
-    paddingTop: 5,
+    paddingTop: 10,
   },
-  name: {
+  line1: {
     fontSize: 20,
-    //fontWeight: "bold",
+    fontWeight: "bold",
     //color: "dodgerblue",
     lineHeight: 30,
   },
-  listing: {
+  line2: {
     fontSize: 15,
     color: "grey",
   },

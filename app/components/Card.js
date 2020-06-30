@@ -1,8 +1,15 @@
 import React from "react";
-import { View, Image, Text, StyleSheet } from "react-native";
-import Button from "../components/Button";
+import { View, Image, Text, StyleSheet, Button } from "react-native";
 
-function Card({ image, job, description, requirement, salary }) {
+function Card({
+  image,
+  job,
+  description,
+  requirement,
+  salary,
+  title,
+  onPress,
+}) {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={image} />
@@ -12,6 +19,7 @@ function Card({ image, job, description, requirement, salary }) {
         <Text style={styles.requirement}>{requirement}</Text>
         <Text style={styles.requirement}>{salary}</Text>
       </View>
+      <Button title={title} onPress={onPress} />
     </View>
   );
 }
@@ -19,10 +27,10 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#ffffff",
     borderRadius: 15,
-    shadowColor: "grey",
-    shadowOffSet: { width: 20, height: 20 },
-    shadowOpacity: 2,
-    shadowRadius: 10,
+    //shadowColor: "dodgerblue",
+    //shadowOffSet: { width: 20, height: 20 },
+    //shadowOpacity: 2,
+    //shadowRadius: 10,
     marginBottom: 20,
   },
   image: {
@@ -52,6 +60,14 @@ const styles = StyleSheet.create({
     //fontWeight: "bold",
     color: "dodgerblue",
     lineHeight: 33,
+  },
+  buttonContainer: {
+    marginRight: -180,
+    marginBottom: 10,
+  },
+
+  button: {
+    fontSize: 20,
   },
 });
 
