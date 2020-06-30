@@ -40,7 +40,7 @@ function MainScreen({ navigation }) {
     <View style={styles.container}>
       <FlatList
         data={jobPosters}
-        //keyExtractor={(settingItem) => settingItem.id.toString()}
+        keyExtractor={(settingItem) => settingItem.id.toString()}
         renderItem={({ item }) => (
           <Card
             image={item.image}
