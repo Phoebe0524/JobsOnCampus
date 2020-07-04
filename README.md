@@ -12,4 +12,4 @@ Large amount of students would like to work on campus for various kinds of reaso
 
 I plan to create two versions of students and staffs so that only staff version has job posting function.
 
-![banner](https://github.com/COSI153/JobPosters/master/assets/Signin.png)
+(https://github.com/COSI153/JobPosters/master/assets/Signin.png)
