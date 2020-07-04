@@ -1,7 +1,5 @@
 # JobPosters
 
-We discuss the presentation on Thursday. You should all take some role in the presentation. It should start off with a hook, typically a statement or question that motivates the app. Then an elevator pitch which describes the grand vision in a few well-rehearsed sentences. Then explain who the app is designed for and how they would use it when it is fully developed.  Finally give a tour of the current version of the app and talk about the next steps you would take if you continued to work on it.
-
 ## Hook
 
 How do students get messages of job information on campus? 
